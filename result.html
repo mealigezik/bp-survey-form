@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Demo Notice</title>
 </head>
-
 <body>
-    <div id="results"></div>
-    <a href="../index.html">Back to Form</a>
-    <script>
-        const resultList = document.getElementById("results");
-        new URLSearchParams(window.location.search).forEach((value, name) => {
-            resultList.append(`${name}: ${value}`);
-            resultList.append(document.createElement("br"));
-        });
-    </script>
+  <main>
+    <h1>Survey demo</h1>
+    <p>This page does not read survey responses from the URL. Do not place personal information in query strings.</p>
+    <p>Demo submissions are not stored or sent to a server.</p>
+    <a href="./index.html">Back to demo form</a>
+  </main>
 </body>
-
 </html>
