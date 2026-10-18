@@ -1,67 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  box-sizing: border-box;
 }
+html { color-scheme: light; }
 body {
-    background-color: #E4F20F;
-    margin: 3px 30%;
-    padding: 10px 5px;
-    border: 8px solid black;
-    min-width: 380px;
+  margin: 0;
+  padding: 24px 16px;
+  background: #f5f5d8;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
 }
-header{
-    padding: 0px 1% 9px 1%;
+main {
+  width: min(100%, 720px);
+  margin: 0 auto;
+  padding: clamp(16px, 4vw, 32px);
+  border: 4px solid #111;
+  border-radius: 16px;
+  background: #fff;
 }
-h1{
-    font-size: 68px;
-    font-family:'Dancing Script';
-    text-align: center;
-    margin-bottom: 9px 0px;
+.header { text-align: center; margin-bottom: 24px; }
+h1 { margin: 0 0 8px; font-size: clamp(2rem, 8vw, 3.5rem); }
+h2 { margin: 8px 0; }
+.header p, [role="note"] { line-height: 1.5; }
+.survey { display: grid; gap: 16px; }
+.box { display: grid; gap: 8px; min-width: 0; }
+label { font-weight: 600; }
+input, select, textarea, button {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #777;
+  border-radius: 8px;
+  font: inherit;
 }
-h2{
-    text-align: center;
-    font-size: 26px;
-    font-family: monospace;
+button { cursor: pointer; }
+.submit {
+  background: #222;
+  color: #fff;
+  border: 2px solid #222;
+  font-weight: 700;
 }
-p {
-    text-align: center;
-    font-size: 20px;
-    border-bottom: 1px solid black;
-}
-form{
-    margin: 0px 1rem;
-    background-color: rgba(0, 0, 0, 0.09);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-}
-.box{
-    /* border: 3px solid orange; */
-    margin:10px auto;
-	/* display:table; */
-    /* width: 100%; */
-    padding: 0 30px;
-}
-.submit{
-    width: 30%;
-    min-width: 20%;
-    background-color: #E4F20F;
-    border: solid 4px black;
-    border-radius: 20px;
-    margin:0 auto;
-	display:table;
-}
-.submit:hover{
-    /* width: 60%; */
-    background-color: black ;
-    border: solid 4px white;
-    color: #e4f20f;
-    cursor: pointer;
-}
-.box  .social-media{
-    /* background-color: pink; */
-    min-width: 290px;
-    padding:  2px 10px;
-    /* margin: 0 auto; */
+.submit:hover { background: #444; }
+#preview { margin-top: 24px; overflow-wrap: anywhere; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 420px) {
+  body { padding: 8px; }
+  main { padding: 14px; border-width: 2px; }
 }
