@@ -1,125 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BP Survey Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilge Panter Survey Demo</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Bilge Panter</h1>
-        <h2>Survey Form</h2>
-        <p>Thank you for taking the time to help us improve the platform.</p>
-    </header>
-    
-    <form class="survey" action="result.html" target="_blank">
-        <input class="submit" type="reset" value="reset">
-                <!-- <label type="reset" for="reset">RESET</label> -->
-        </input>
-        </div>
-        <div class="box">
-            <label for="name">Name</label>
-            <br>
-            <input class="social-media" required
-            type="text" 
-            id="name" 
-            name="name" 
-            placeholder="Enter your name.">
-        </div>
-        <div class="box">
-            <label for="surname">Surname</label>
-            <br>
-            <input class="social-media" required
-            type="text" 
-            id="surname" 
-            name="surname" 
-            placeholder="Enter your surname.">
-        </div>
-        <div class="box">
-            <label for="age">Age</label>
-            <br>
-            <input type="number" name="age" id="age" max="123" min="3">
-
-        </div>
-        <div class="box">
-            <label for="email">E-mail</label>
-            <br>
-            <input class="social-media" required
-            type="email" 
-            name="email" 
-            id="email"
-            placeholder="user@bilgepanter.com">
-        </div>
-        <div class="box">
-            <label for="area">What is your area of interest?</label>
-            <br>
-            <select name="area" id="area">
-                <option disabled selected>Selected area</option>
-                <option value="sport">Sport</option>
-                <option value="health">Health</option>
-                <option value="travel">Travel</option>
-                <option value="technology">Technology</option>
-                <option value="game">Game</option>
-                <option value="diy">DIY (do it yourself)</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        <div class="box">
-            <label for="prefer">Would you recommend Bilge Panter to a friend?</label>
-            <br>
-            <input type="radio" name="prefer" id="yes"  value="Definitely, Yes" checked>
-            <label for="yes">Definitely, Yes</label>
-            <br>
-            <input type="radio" name="prefer" id="maybe" value="Maybe">
-            <label for="maybe">Maybe</label>
-            <br>
-            <input type="radio" name="prefer" id="not-sure" value="Not Sure">
-            <label for="not-sure">Not Sure</label>
-            <br>
-            <input type="radio" name="prefer" id="definitely-no" value="Definitely, No">
-            <label for="definitely-no">Definitely, No</label>
-        </div>
-        <div class="box">
-            <label for="social-media">What is your favorite social media platform of Bilge Panter?</label>
-            <br>
-            <select class="social-media" name="social-media" id="social-media">
-                <option class="" value="" disabled selected>Select in option</option>
-                <option class="ytb" value="youtube">YouTube</option>
-                <option class="blg" value="blog">Blog</option>
-                <option class="ins" value="instagram">Instagram</option>
-                <option class="twi" value="twitter">Twitter <span><img src="./images/twitter-icon-65.png" alt=""> </span></option>
-            </select>
-        </div>
-        <div class="box">
-            <label for="improve">What wold you like to see improved? (Check all that apply)</label>
-            <br>
-            <input type="checkbox" name="youtube" id="youtube">
-            <label for="youtube"><img style="width: 33px; height:33px" src="./images/youtube-logo-png-46031.png" alt="youtube">YouTube</label>
-            <br>
-            <input type="checkbox" name="blog" id="blog" checked>
-            <label for="blog"><img style="width: 33px; height: 33px" src="./images/bp-logo-tran.png" alt="blog">Blog</label>
-            <br>
-            <input type="checkbox" name="twitter" id="twitter">
-            <label for="twitter"><img style="width: 33px; height:33px" src="./images/twitter-icon-65.png" alt="twitter">Twitter</label>
-            <br>
-            <input type="checkbox" name="instagram" id="instagram">
-            <label for="instagram"><img style="width: 33px; height:33px" src="./images/580b57fcd9996e24bc43c521.png" alt="instagram">Instagram</label>
-        </div>
-        <div class="box">
-            <label for="feedback"> Any comments or suggestions?</label>
-            <br>
-            <textarea class="social-media" name="feedback" id="feedback" cols="30" rows="8" placeholder="Enter your feedback"></textarea>
-        </div>
-        <input class="submit" type="submit" value="SEND">
-        </input>
-        </div>
-    </form>
-    
-    
+<main>
+<header class="header">
+<h1>Bilge Panter</h1>
+<h2>Survey Form Demo</h2>
+<p>This is a demo only. Do not enter real personal, health, or contact information.</p>
+</header>
+<form class="survey" id="survey-form">
+<p role="note">Demo mode: responses stay in this page session only and are not submitted or stored.</p>
+<div class="box"><label for="name">Display name (optional)</label><input class="social-media" type="text" id="name" name="name" autocomplete="off"></div>
+<div class="box"><label for="age">Age (optional)</label><input type="number" name="age" id="age" max="123" min="3"></div>
+<div class="box"><label for="area">Area of interest</label><select name="area" id="area"><option value="">Choose an option</option><option value="sport">Sport</option><option value="travel">Travel</option><option value="technology">Technology</option><option value="game">Games</option><option value="diy">DIY</option><option value="other">Other</option></select></div>
+<div class="box"><label for="recommend">Would you recommend Bilge Panter?</label><select name="recommend" id="recommend"><option value="">Choose an option</option><option value="yes">Definitely, yes</option><option value="maybe">Maybe</option><option value="unsure">Not sure</option><option value="no">Definitely, no</option></select></div>
+<div class="box"><label for="platform">Favourite Bilge Panter platform</label><select name="platform" id="platform"><option value="">Choose an option</option><option value="youtube">YouTube</option><option value="blog">Blog</option><option value="instagram">Instagram</option><option value="twitter">Twitter</option></select></div>
+<div class="box"><label for="feedback">Suggestions (do not include personal information)</label><textarea class="social-media" name="feedback" id="feedback" rows="5"></textarea></div>
+<button class="submit" type="submit">Preview demo</button><button class="submit" type="reset">Reset</button>
+</form>
+<section id="preview" aria-live="polite" hidden><h2>Local preview</h2><p>The preview is not uploaded or saved.</p><pre id="preview-content"></pre></section>
+</main>
+<script>
+const form = document.getElementById("survey-form");
+const preview = document.getElementById("preview");
+const previewContent = document.getElementById("preview-content");
+form.addEventListener("submit", event => {
+  event.preventDefault();
+  previewContent.textContent = JSON.stringify(Object.fromEntries(new FormData(form).entries()), null, 2);
+  preview.hidden = false;
+});
+form.addEventListener("reset", () => { preview.hidden = true; previewContent.textContent = ""; });
+</script>
 </body>
 </html>
